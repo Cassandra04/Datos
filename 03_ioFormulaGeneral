@@ -1,0 +1,23 @@
+Algoritmo Programaformulageneral
+	Escribir "Programa para resolver por f�rmula general ecuaciones de segundo grado"
+	Escribir "Ingrese los valores"
+	Definir a, b, c, i, j Como Real
+	Definir X1, X2 Como Real
+	Leer a, b, c
+	
+	i<-(b*b)-4*a*c
+	
+	Si i < 0 Entonces
+		Escribir "La respuesta est� dentro de los n�meros complejos"
+		X1<--b/2*a
+		j=rc(-1*i)
+		Escribir "La respuesta es " X1 "+" j "i"
+		Escribir "La respuesta es " X1 "-" j "i"
+	SiNo
+		Escribir "La respuesta est� dentro de los reales"
+		X1<-(-b/2*a)+i
+		X2<-(-b/2*a)-i
+		Escribir "La respuesta es " X1 " y " X2
+	FinSi
+	
+FinAlgoritmo
