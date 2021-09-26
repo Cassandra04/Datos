@@ -1,0 +1,69 @@
+Algoritmo ProgramaCasaDeCambio
+	Escribir "Bienvenido a la casa de cambio"
+	Escribir "Definir saldo en dolares"
+	Leer Sd
+	Escribir "Definir saldo de pesos"
+	Leer Sp
+	Repetir
+		Escribir "Desea realizar una acci�n?"
+		Escribir "(1) Si"
+		Escribir "(2) No"
+		Leer n1 
+		Segun n1 Hacer
+			1:
+			Escribir "1. Compra" 
+			Escribir "2. Venta"
+			Escribir "3. Consulta de saldo"
+			Escribir sin saltar "Escriba el n�mero de la acci�n que desea realizar "
+			Leer n2
+			Segun n2 hacer
+			1:
+				Escribir "1. Dolares"
+				Escribir "2. Pesos"
+				Leer n3
+				Segun n3 Hacer
+					1:
+						Escribir Sin Saltar "Escriba la cantidad "
+						Leer D
+						P<-D/18.85
+						Escribir "La cantidad es " P
+						Ad<-Sd-D
+						Ap<-Sp+P
+					2:
+						Escribir Sin Saltar "Escriba la cantidad "
+						Leer P
+						D<-P*18.85
+						Escribir "La cantidad es" D
+						Ad<-Sd+D
+						Ap<-Sp-P
+				FinSegun
+			2:
+				Escribir "1. Dolares"
+				Escribir "2. Pesos"
+				Leer n4
+				Segun n4 Hacer
+					1:
+						Escribir "Escriba la cantidad"
+						Leer Do
+						Pe<-Do/20.25
+						Escribir "La cantidad es" Pe
+						Ap<-Sp-Pe
+						Ad<-Sd+Do
+					2:
+						Escribir "Escriba la cantidad"
+						Leer Pe
+						Do<-Pe*20.25
+						Escribir "La cantidad es" Do
+						Ad<-Sd-Do
+						Ap<-Sp+Pe
+				FinSegun
+			3:
+				
+				Escribir "Su saldo es " Ad	" en Pesos"
+				Escribir "Su saldo es " Ap " en Dolares"
+			FinSegun
+		FinSegun
+	Hasta Que n1 = 2
+
+	
+FinAlgoritmo
