@@ -1,0 +1,26 @@
+Algoritmo ProgramaParaLasTablasDeMultiplicar
+	Escribir "Programa que te pregunta las tablas de multiplicar del 1 al 10"
+	Repetir
+		Escribir "1. Iniciar"
+		Escribir "2. Salir"
+		Leer n1
+		Para A<-1 Hasta 10 Con Paso 1 Hacer	
+			M<- azar (10)
+			N<- azar (10)
+			Escribir "�Cuánto es " M " por " N "?" 
+			Escribir ""
+			Leer R1
+			R2<-M*N
+			Si R1=R2 Entonces
+				Escribir "Tu respuesta " R1 " es correcta"
+				P<-P+1
+			SiNo
+				Escribir "Tu respuesta " R1 " es incorrecta"
+				Escribir "La respuesta correcta es " R2
+			FinSi
+		FinPara
+		Escribir "Puntaje " P
+		
+	Hasta Que n1=2
+	
+FinAlgoritmo
