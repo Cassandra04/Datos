@@ -1,0 +1,8 @@
+Algoritmo areadeuntriangulo
+	Escribir "Programa para calcular el �rea de un tri�ngulo"
+	Escribir "Insertar base y altura"
+	Definir b, h, a Como Real
+	Leer b, h
+	a<-b*h/2
+	Escribir "El �rea del tri�ngulo es " a
+FinAlgoritmo
