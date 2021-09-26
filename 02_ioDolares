@@ -1,0 +1,10 @@
+Algoritmo Programaparaconvertirpesosadolares
+	Escribir "Programa que convierte pesos a d�lares"
+	Escribir "Inserte el valor en pesos"
+Definir p, d como Real
+Leer p
+d<-p*0.050
+Escribir "Tu cantidad son " d " dolares"
+
+	
+FinAlgoritmo
